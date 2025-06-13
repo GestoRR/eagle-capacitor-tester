@@ -186,12 +186,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="+15V" urn="urn:adsk.eagle:symbol:26984/1" library_version="2">
+<symbol name="+12V" urn="urn:adsk.eagle:symbol:26985/1" library_version="2">
 <wire x1="0" y1="1.905" x2="0" y2="0.635" width="0.1524" layer="94"/>
 <wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
 <circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
 <text x="-2.54" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="+15V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -208,10 +208,10 @@ In this library the device names are the same as the pin names of the symbols, t
 </device>
 </devices>
 </deviceset>
-<deviceset name="+15V" urn="urn:adsk.eagle:component:27043/1" prefix="SUPPLY" library_version="2">
+<deviceset name="+12V" urn="urn:adsk.eagle:component:27033/1" prefix="SUPPLY" library_version="2">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="+15V" symbol="+15V" x="0" y="0"/>
+<gate name="+12V" symbol="+12V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -1415,6 +1415,70 @@ Source: &lt;a href="https://www.analog.com/AD8531/datasheet"&gt; Datasheet &lt;/
 </deviceset>
 </devicesets>
 </library>
+<library name="PMEG6020ER_115">
+<description>&lt;Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="PMEG6020ER115">
+<description>&lt;b&gt;PMEG6020ER,115-1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-1.4" y="0" dx="1.2" dy="1.2" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.2" dy="1.2" layer="1"/>
+<text x="0" y="-2.2" size="1.27" layer="25" align="center">&gt;NAME</text>
+<wire x1="-2.6" y1="0" x2="-2.5" y2="0" width="0.2" layer="21" curve="180"/>
+<wire x1="-2.5" y1="0" x2="-2.6" y2="0" width="0.2" layer="21" curve="180"/>
+<wire x1="-0.4" y1="0.85" x2="0.4" y2="0.85" width="0.2" layer="21"/>
+<wire x1="-0.4" y1="-0.85" x2="0.4" y2="-0.85" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PMEG6020ER,115">
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="8.636" y2="2.54" width="0.254" layer="94"/>
+<wire x1="8.636" y1="1.524" x2="8.636" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="6.604" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="6.604" y1="-1.524" x2="6.604" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<text x="12.7" y="8.89" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="12.7" y="6.35" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="K" x="2.54" y="0" visible="pad" length="short"/>
+<pin name="A" x="17.78" y="0" visible="pad" length="short" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="7.62" y="0"/>
+<vertex x="12.7" y="2.54"/>
+<vertex x="12.7" y="-2.54"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PMEG6020ER,115" prefix="D">
+<description>&lt;b&gt;Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG6020ER.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="PMEG6020ER,115" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PMEG6020ER115">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="K" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Nexperia PMEG6020ER,115 SMT Schottky Diode, 60V 2A, 2-Pin SOD-123W" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Nexperia" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="PMEG6020ER,115" constant="no"/>
+<attribute name="TME_ELECTRONIC_COMPONENTS_PART_NUMBER" value="" constant="no"/>
+<attribute name="TME_ELECTRONIC_COMPONENTS_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1449,20 +1513,19 @@ Source: &lt;a href="https://www.analog.com/AD8531/datasheet"&gt; Datasheet &lt;/
 <part name="J2" library="DS1044-140G" deviceset="DS1044-140G" device=""/>
 <part name="IC2" library="MC34063EBD-TR" deviceset="MC34063EBD-TR" device=""/>
 <part name="D1" library="SS14" deviceset="SS14" device=""/>
-<part name="R9" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="10k-1%"/>
-<part name="R10" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="910R-1%"/>
+<part name="R9" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="8k66-1%"/>
+<part name="R10" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="1k-1%"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C4" library="EEEFKC271XSP" deviceset="EEEFKC271XSP" device=""/>
+<part name="C4" library="EEEFKC271XSP" deviceset="EEEFKC271XSP" device="" value="270u / 16V"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C5" library="EEEFKC271XSP" deviceset="EEEFKC271XSP" device="" value="VS1C101ME054000CE0"/>
+<part name="C5" library="EEEFKC271XSP" deviceset="EEEFKC271XSP" device="" value="270u / 16V"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R11" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="0603WAJ022KT5E"/>
+<part name="R11" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="R270-1%"/>
 <part name="R12" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="180R-1%"/>
-<part name="L1" library="SDR0604-221KL" deviceset="SDR0604-221KL" device=""/>
+<part name="L1" library="SDR0604-221KL" deviceset="SDR0604-221KL" device="" value="220u"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="custom_library" deviceset="CAPACITOR_SMD_CERAMIC" device="0603" value="560p"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+15V" device=""/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 <part name="J4" library="custom_library" deviceset="250-103" device=""/>
 <part name="IC3" library="DAC6571IDBVT" deviceset="DAC6571IDBVT" device=""/>
@@ -1486,6 +1549,10 @@ Source: &lt;a href="https://www.analog.com/AD8531/datasheet"&gt; Datasheet &lt;/
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R2" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="10k-1%"/>
 <part name="R4" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="DNP-10k-1%"/>
+<part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="D2" library="PMEG6020ER_115" deviceset="PMEG6020ER,115" device=""/>
+<part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1539,6 +1606,11 @@ DC-DC</text>
 <wire x1="120.65" y1="-17.78" x2="60.96" y2="-17.78" width="0.1524" layer="97" style="longdash"/>
 <text x="1.27" y="-36.83" size="6.4516" layer="97" ratio="16">OPAMP 2nd 
 STAGE</text>
+<text x="132.08" y="-27.94" size="6.4516" layer="97" ratio="16">ESD </text>
+<wire x1="123.19" y1="-17.78" x2="123.19" y2="-82.55" width="0.1524" layer="97" style="longdash"/>
+<wire x1="123.19" y1="-82.55" x2="160.02" y2="-82.55" width="0.1524" layer="97" style="longdash"/>
+<wire x1="160.02" y1="-82.55" x2="160.02" y2="-17.78" width="0.1524" layer="97" style="longdash"/>
+<wire x1="160.02" y1="-17.78" x2="123.19" y2="-17.78" width="0.1524" layer="97" style="longdash"/>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="-24.13" y="25.4" smashed="yes">
@@ -1618,8 +1690,8 @@ STAGE</text>
 <attribute name="VALUE" x="-56.13925" y="-65.7983" size="1.77975" layer="96"/>
 </instance>
 <instance part="IC2" gate="G$1" x="30.48" y="123.19" smashed="yes" rot="MR0">
-<attribute name="NAME" x="20.32" y="130.81" size="1.778" layer="95" rot="MR0" align="center-left"/>
-<attribute name="VALUE" x="27.94" y="128.27" size="1.778" layer="96" rot="MR0" align="center-left"/>
+<attribute name="NAME" x="20.32" y="127" size="1.778" layer="95" rot="MR0" align="center-left"/>
+<attribute name="VALUE" x="27.94" y="110.49" size="1.778" layer="96" rot="MR0" align="center-left"/>
 </instance>
 <instance part="D1" gate="G$1" x="50.8" y="104.14" smashed="yes" rot="R90">
 <attribute name="NAME" x="55.88" y="113.03" size="1.778" layer="95" rot="R90" align="center-left"/>
@@ -1627,40 +1699,40 @@ STAGE</text>
 </instance>
 <instance part="R9" gate="G$1" x="12.7" y="99.06" smashed="yes" rot="R180">
 <attribute name="NAME" x="13.97" y="97.5614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="16.51" y="102.362" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="17.78" y="102.362" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R10" gate="G$1" x="-3.81" y="99.06" smashed="yes" rot="R180">
 <attribute name="NAME" x="-2.54" y="97.5614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="1.27" y="102.362" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="0" y="102.362" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND11" gate="1" x="-10.16" y="78.74" smashed="yes">
 <attribute name="VALUE" x="-12.7" y="76.2" size="1.778" layer="96"/>
 </instance>
 <instance part="C4" gate="G$1" x="50.8" y="95.25" smashed="yes" rot="R270">
-<attribute name="NAME" x="57.15" y="88.9" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="44.45" y="97.79" size="1.778" layer="96" rot="R270" align="center-left"/>
+<attribute name="NAME" x="46.99" y="90.17" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="54.61" y="93.98" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
 <instance part="GND12" gate="1" x="50.8" y="78.74" smashed="yes">
 <attribute name="VALUE" x="48.26" y="76.2" size="1.778" layer="96"/>
 </instance>
 <instance part="C5" gate="G$1" x="-17.78" y="100.33" smashed="yes" rot="R270">
 <attribute name="NAME" x="-21.59" y="95.25" size="1.778" layer="95" rot="R270" align="center-left"/>
-<attribute name="VALUE" x="-13.97" y="102.87" size="1.778" layer="96" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="-13.97" y="87.63" size="1.778" layer="96" rot="R90" align="center-left"/>
 </instance>
 <instance part="GND13" gate="1" x="-17.78" y="78.74" smashed="yes">
 <attribute name="VALUE" x="-20.32" y="76.2" size="1.778" layer="96"/>
 </instance>
 <instance part="R11" gate="G$1" x="-8.89" y="118.11" smashed="yes" rot="R180">
 <attribute name="NAME" x="-7.62" y="116.6114" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-21.59" y="112.268" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-15.24" y="112.268" size="1.778" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="-3.81" y="123.19" smashed="yes" rot="R180">
 <attribute name="NAME" x="-1.27" y="129.3114" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="1.27" y="126.492" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="L1" gate="G$1" x="6.35" y="134.62" smashed="yes">
-<attribute name="NAME" x="8.89" y="140.97" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="8.89" y="138.43" size="1.778" layer="96" align="center-left"/>
+<attribute name="NAME" x="15.24" y="137.16" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="13.97" y="133.35" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="GND14" gate="1" x="34.29" y="105.41" smashed="yes">
 <attribute name="VALUE" x="31.75" y="102.87" size="1.778" layer="96"/>
@@ -1671,9 +1743,6 @@ STAGE</text>
 </instance>
 <instance part="GND15" gate="1" x="41.91" y="105.41" smashed="yes">
 <attribute name="VALUE" x="39.37" y="102.87" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY13" gate="+15V" x="55.88" y="99.06" smashed="yes" rot="R270">
-<attribute name="VALUE" x="59.055" y="101.6" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="SUPPLY12" gate="+5V" x="-21.59" y="106.68" smashed="yes" rot="R90">
 <attribute name="VALUE" x="-26.035" y="108.585" size="1.778" layer="96" rot="R270"/>
@@ -1753,6 +1822,19 @@ STAGE</text>
 <instance part="R4" gate="G$1" x="46.99" y="-58.42" smashed="yes" rot="R270">
 <attribute name="NAME" x="48.4886" y="-57.15" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="43.688" y="-52.07" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY9" gate="+12V" x="55.88" y="99.06" smashed="yes" rot="R270">
+<attribute name="VALUE" x="59.055" y="101.6" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="SUPPLY10" gate="+12V" x="133.35" y="29.21" smashed="yes">
+<attribute name="VALUE" x="130.81" y="32.385" size="1.778" layer="96"/>
+</instance>
+<instance part="D2" gate="G$1" x="140.97" y="-45.72" smashed="yes" rot="R270">
+<attribute name="NAME" x="147.32" y="-54.61" size="1.778" layer="95" rot="R270" align="center-left"/>
+<attribute name="VALUE" x="134.62" y="-44.45" size="1.778" layer="96" rot="R270" align="center-left"/>
+</instance>
+<instance part="SUPPLY13" gate="+12V" x="140.97" y="-39.37" smashed="yes">
+<attribute name="VALUE" x="138.43" y="-36.195" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -2147,19 +2229,6 @@ STAGE</text>
 <pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="+15V" class="0">
-<segment>
-<pinref part="D1" gate="G$1" pin="K"/>
-<wire x1="50.8" y1="106.68" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="99.06" x2="50.8" y2="95.25" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="99.06" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
-<junction x="50.8" y="99.06"/>
-<pinref part="R9" gate="G$1" pin="1"/>
-<pinref part="C4" gate="G$1" pin="+"/>
-<wire x1="50.8" y1="99.06" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="SUPPLY13" gate="+15V" pin="+15V"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="SJ1" gate="1" pin="2"/>
@@ -2220,13 +2289,6 @@ STAGE</text>
 <junction x="151.13" y="17.78"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="+VS"/>
-<wire x1="132.08" y1="22.86" x2="133.35" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="133.35" y1="22.86" x2="133.35" y2="26.67" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="Z_OUT" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="14"/>
@@ -2267,6 +2329,11 @@ STAGE</text>
 <wire x1="27.94" y1="-68.58" x2="24.13" y2="-68.58" width="0.1524" layer="91"/>
 <label x="24.13" y="-68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="140.97" y1="-63.5" x2="140.97" y2="-67.31" width="0.1524" layer="91"/>
+<label x="140.97" y="-67.31" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -2279,6 +2346,30 @@ STAGE</text>
 <junction x="40.64" y="-68.58"/>
 <pinref part="IC1" gate="G$1" pin="OUT_A"/>
 <wire x1="36.83" y1="-55.88" x2="40.64" y2="-55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="+12V" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="K"/>
+<wire x1="50.8" y1="106.68" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="99.06" x2="50.8" y2="95.25" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="99.06" x2="17.78" y2="99.06" width="0.1524" layer="91"/>
+<junction x="50.8" y="99.06"/>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="+"/>
+<wire x1="50.8" y1="99.06" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="+12V" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="G$1" pin="+VS"/>
+<wire x1="132.08" y1="22.86" x2="133.35" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="133.35" y1="22.86" x2="133.35" y2="26.67" width="0.1524" layer="91"/>
+<pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="K"/>
+<wire x1="140.97" y1="-48.26" x2="140.97" y2="-41.91" width="0.1524" layer="91"/>
+<pinref part="SUPPLY13" gate="+12V" pin="+12V"/>
 </segment>
 </net>
 </nets>
