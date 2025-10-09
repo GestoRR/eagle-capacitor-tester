@@ -1137,60 +1137,6 @@ Source: &lt;a href="http://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/AB
 </deviceset>
 </devicesets>
 </library>
-<library name="SDR0604-221KL">
-<description>&lt;Fixed Inductors 220uH 10% SMD 0604&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
-<packages>
-<package name="SDR0604221KL">
-<description>&lt;b&gt;SDR0604-221KL-1&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="0" y="-1.95" dx="5.8" dy="2.1" layer="1"/>
-<smd name="2" x="0" y="1.95" dx="5.8" dy="2.1" layer="1"/>
-<text x="0" y="5.08" size="1.27" layer="25" align="center">&gt;NAME</text>
-<wire x1="2.9" y1="-0.2" x2="2.9" y2="0.2" width="0.1" layer="21"/>
-<wire x1="-2.9" y1="-0.2" x2="-2.9" y2="0.2" width="0.1" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="SDR0604-221KL">
-<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94" curve="-175.4"/>
-<text x="16.51" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
-<text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
-<pin name="1" x="0" y="0" visible="pad" length="middle"/>
-<pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SDR0604-221KL" prefix="L">
-<description>&lt;b&gt;Fixed Inductors 220uH 10% SMD 0604&lt;/b&gt;&lt;p&gt;
-Source: &lt;a href="https://componentsearchengine.com/Datasheets/2/SDR0604-220YL.pdf"&gt; Datasheet &lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SDR0604-221KL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SDR0604221KL">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DESCRIPTION" value="Fixed Inductors 220uH 10% SMD 0604" constant="no"/>
-<attribute name="HEIGHT" value="4.8mm" constant="no"/>
-<attribute name="MANUFACTURER_NAME" value="Bourns" constant="no"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="SDR0604-221KL" constant="no"/>
-<attribute name="TME_ELECTRONIC_COMPONENTS_PART_NUMBER" value="" constant="no"/>
-<attribute name="TME_ELECTRONIC_COMPONENTS_PRICE-STOCK" value="" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="DAC6571IDBVT">
 <description>&lt;Texas Instruments DAC6571IDBVT, 10 bit Serial DAC, 188ksps, 6-Pin SOT-23&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
@@ -1479,6 +1425,69 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG6020ER.
 </deviceset>
 </devicesets>
 </library>
+<library name="SDR0604-150YL">
+<description>&lt;Bourns SDR0604 Series Wire-wound SMD Inductor with a Ferrite Core, 15 uH +/-15% 1.6A Idc Q:30&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SDR0604330KL">
+<description>&lt;b&gt;SDR0604-330KL-2&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="0" y="-1.95" dx="5.8" dy="2.1" layer="1"/>
+<smd name="2" x="0" y="1.95" dx="5.8" dy="2.1" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3.4" y1="3.5" x2="3.4" y2="3.5" width="0.1" layer="51"/>
+<wire x1="3.4" y1="3.5" x2="3.4" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="3.4" y1="-3.5" x2="-3.4" y2="-3.5" width="0.1" layer="51"/>
+<wire x1="-3.4" y1="-3.5" x2="-3.4" y2="3.5" width="0.1" layer="51"/>
+<wire x1="-2.9" y1="0" x2="-2.9" y2="0" width="0.2" layer="51"/>
+<wire x1="-2.9" y1="0" x2="2.9" y2="0" width="0.2" layer="51" curve="-180"/>
+<wire x1="2.9" y1="0" x2="2.9" y2="0" width="0.2" layer="51"/>
+<wire x1="2.9" y1="0" x2="-2.9" y2="0" width="0.2" layer="51" curve="-180"/>
+<wire x1="2.9" y1="0.2" x2="2.9" y2="-0.2" width="0.1" layer="21"/>
+<wire x1="-2.9" y1="0.2" x2="-2.9" y2="-0.2" width="0.1" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="SDR0604-150YL">
+<wire x1="5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="7.62" y1="0" x2="10.16" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="10.16" y1="0" x2="12.7" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<wire x1="12.7" y1="0" x2="15.24" y2="0" width="0.254" layer="94" curve="-175.4"/>
+<text x="16.51" y="6.35" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="3.81" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" visible="pad" length="middle"/>
+<pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SDR0604-150YL" prefix="L">
+<description>&lt;b&gt;Bourns SDR0604 Series Wire-wound SMD Inductor with a Ferrite Core, 15 uH +/-15% 1.6A Idc Q:30&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.bourns.com/docs/Product-Datasheets/SDR0604.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="SDR0604-150YL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SDR0604330KL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Bourns SDR0604 Series Wire-wound SMD Inductor with a Ferrite Core, 15 uH +/-15% 1.6A Idc Q:30" constant="no"/>
+<attribute name="HEIGHT" value="4.8mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Bourns" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="SDR0604-150YL" constant="no"/>
+<attribute name="TME_ELECTRONIC_COMPONENTS_PART_NUMBER" value="" constant="no"/>
+<attribute name="TME_ELECTRONIC_COMPONENTS_PRICE-STOCK" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1520,9 +1529,8 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG6020ER.
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="EEEFKC271XSP" deviceset="EEEFKC271XSP" device="" value="270u / 16V"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R11" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="R270-1%"/>
+<part name="R11" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="R133-1%"/>
 <part name="R12" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="180R-1%"/>
-<part name="L1" library="SDR0604-221KL" deviceset="SDR0604-221KL" device="" value="220u"/>
 <part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C6" library="custom_library" deviceset="CAPACITOR_SMD_CERAMIC" device="0603" value="560p"/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -1553,6 +1561,7 @@ Source: &lt;a href="https://assets.nexperia.com/documents/data-sheet/PMEG6020ER.
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="D2" library="PMEG6020ER_115" deviceset="PMEG6020ER,115" device=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="L1" library="SDR0604-150YL" deviceset="SDR0604-150YL" device="" value="15uH"/>
 </parts>
 <sheets>
 <sheet>
@@ -1724,15 +1733,11 @@ STAGE</text>
 </instance>
 <instance part="R11" gate="G$1" x="-8.89" y="118.11" smashed="yes" rot="R180">
 <attribute name="NAME" x="-7.62" y="116.6114" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="-15.24" y="112.268" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-13.97" y="112.268" size="1.778" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="-3.81" y="123.19" smashed="yes" rot="R180">
 <attribute name="NAME" x="-1.27" y="129.3114" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="1.27" y="126.492" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="L1" gate="G$1" x="6.35" y="134.62" smashed="yes">
-<attribute name="NAME" x="15.24" y="137.16" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="13.97" y="133.35" size="1.778" layer="96" align="center-left"/>
 </instance>
 <instance part="GND14" gate="1" x="34.29" y="105.41" smashed="yes">
 <attribute name="VALUE" x="31.75" y="102.87" size="1.778" layer="96"/>
@@ -1835,6 +1840,10 @@ STAGE</text>
 </instance>
 <instance part="SUPPLY13" gate="+12V" x="140.97" y="-39.37" smashed="yes">
 <attribute name="VALUE" x="138.43" y="-36.195" size="1.778" layer="96"/>
+</instance>
+<instance part="L1" gate="G$1" x="6.35" y="134.62" smashed="yes">
+<attribute name="NAME" x="15.24" y="137.16" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="13.97" y="133.35" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -2179,10 +2188,10 @@ STAGE</text>
 <wire x1="30.48" y1="123.19" x2="41.91" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="41.91" y1="123.19" x2="50.8" y2="123.19" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="123.19" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="26.67" y1="134.62" x2="41.91" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="41.91" y1="134.62" x2="41.91" y2="123.19" width="0.1524" layer="91"/>
 <junction x="41.91" y="123.19"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
