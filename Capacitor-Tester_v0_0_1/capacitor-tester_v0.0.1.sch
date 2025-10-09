@@ -1547,7 +1547,7 @@ Source: &lt;a href="https://www.bourns.com/docs/Product-Datasheets/SDR0604.pdf"&
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R5" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="10k-1%"/>
 <part name="R6" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="1k-1%"/>
-<part name="R15" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="5k-1%"/>
+<part name="R15" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="10k-1%"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R16" library="custom_library" deviceset="RESISTOR_SMD" device="0603" value="10k-1%"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -1560,8 +1560,14 @@ Source: &lt;a href="https://www.bourns.com/docs/Product-Datasheets/SDR0604.pdf"&
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="D2" library="PMEG6020ER_115" deviceset="PMEG6020ER,115" device=""/>
-<part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
 <part name="L1" library="SDR0604-150YL" deviceset="SDR0604-150YL" device="" value="15uH"/>
+<part name="C3" library="custom_library" deviceset="CAPACITOR_SMD_CERAMIC" device="0603" value="100n"/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+12V" device=""/>
+<part name="C7" library="custom_library" deviceset="CAPACITOR_SMD_CERAMIC" device="0603" value="100n"/>
+<part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1838,12 +1844,32 @@ STAGE</text>
 <attribute name="NAME" x="147.32" y="-54.61" size="1.778" layer="95" rot="R270" align="center-left"/>
 <attribute name="VALUE" x="134.62" y="-44.45" size="1.778" layer="96" rot="R270" align="center-left"/>
 </instance>
-<instance part="SUPPLY13" gate="+12V" x="140.97" y="-39.37" smashed="yes">
-<attribute name="VALUE" x="138.43" y="-36.195" size="1.778" layer="96"/>
-</instance>
 <instance part="L1" gate="G$1" x="6.35" y="134.62" smashed="yes">
 <attribute name="NAME" x="15.24" y="137.16" size="1.778" layer="95" align="center-left"/>
 <attribute name="VALUE" x="13.97" y="133.35" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C3" gate="G$1" x="153.67" y="40.64" smashed="yes">
+<attribute name="NAME" x="152.019" y="42.164" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="152.019" y="33.274" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND9" gate="1" x="153.67" y="33.02" smashed="yes">
+<attribute name="VALUE" x="151.13" y="30.48" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY14" gate="+12V" x="153.67" y="49.53" smashed="yes">
+<attribute name="VALUE" x="151.13" y="52.705" size="1.778" layer="96"/>
+</instance>
+<instance part="C7" gate="G$1" x="54.61" y="-60.96" smashed="yes">
+<attribute name="NAME" x="52.959" y="-59.436" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="52.959" y="-68.326" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND10" gate="1" x="54.61" y="-68.58" smashed="yes">
+<attribute name="VALUE" x="52.07" y="-71.12" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY15" gate="+5V" x="54.61" y="-52.07" smashed="yes">
+<attribute name="VALUE" x="52.705" y="-48.895" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY13" gate="+5V" x="140.97" y="-39.37" smashed="yes">
+<attribute name="VALUE" x="139.065" y="-36.195" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -1963,6 +1989,16 @@ STAGE</text>
 <wire x1="6.35" y1="-55.88" x2="2.54" y2="-55.88" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="153.67" y1="36.83" x2="153.67" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="54.61" y1="-64.77" x2="54.61" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -2046,6 +2082,16 @@ STAGE</text>
 <wire x1="36.83" y1="-53.34" x2="40.64" y2="-53.34" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="-53.34" x2="40.64" y2="-46.99" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="54.61" y1="-57.15" x2="54.61" y2="-54.61" width="0.1524" layer="91"/>
+<pinref part="SUPPLY15" gate="+5V" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="K"/>
+<wire x1="140.97" y1="-48.26" x2="140.97" y2="-41.91" width="0.1524" layer="91"/>
+<pinref part="SUPPLY13" gate="+5V" pin="+5V"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -2376,9 +2422,9 @@ STAGE</text>
 <pinref part="SUPPLY10" gate="+12V" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="K"/>
-<wire x1="140.97" y1="-48.26" x2="140.97" y2="-41.91" width="0.1524" layer="91"/>
-<pinref part="SUPPLY13" gate="+12V" pin="+12V"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="153.67" y1="44.45" x2="153.67" y2="46.99" width="0.1524" layer="91"/>
+<pinref part="SUPPLY14" gate="+12V" pin="+12V"/>
 </segment>
 </net>
 </nets>
